@@ -1,0 +1,93 @@
+*{
+    padding: .0;
+    margin: 0;
+}
+.main-menu{
+    background-color: #1abc9c;
+}
+.main-menu ul{
+    text-align: center;
+}
+.main-menu ul li {
+	display: inline-block;
+    margin-left: -4px;
+    position: relative;
+}
+.main-menu ul li a {
+	display: inline-block;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 15px 20px;
+	text-decoration: none;
+    border-right: 1px solid #ddd;
+    transition: .5s;
+}
+.main-menu ul li:first-child{
+    border-left: 1px solid #ddd;
+}
+.main-menu ul li a:hover{
+    background-color: #16a085;
+}
+
+/* dropdwon menu */
+.main-menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1abc9c;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    
+}
+.main-menu ul li ul li{
+    display: block;
+    margin-left: 0;
+    
+}
+.main-menu ul li ul li a{
+    display: block;
+    border-bottom: 1px solid #ddd;  
+}
+.main-menu ul li:hover >a {
+background-color: #16a085;
+}
+.main-menu ul li ul li:first-child{
+    border-top: 1px solid #ddd;
+   
+}
+.main-menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform-origin: top;
+    transform: scale(Y);
+}
+
+
+/*  Social Icon Css */
+.s-icon{
+width: 700px;
+margin: 50px auto;
+}
+.s-icon ul{}
+.s-icon ul li{
+    display: inline-block;
+}
+.s-icon ul li a {
+	display: inline-block;
+	font-size: 68px;
+	background-color: #3498db;
+	color: #ffffff;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	border-radius: 50%;
+	margin-left: 10px;
+    margin-right: 21px;
+    transition: .6s;
+}
+.s-icon ul li a:hover{
+    background-color:  #e74c3c;
+}
